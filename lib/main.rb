@@ -70,16 +70,20 @@ module Conversion
       def create!(source)
         new(source).tap do |target|
           target.create!
-          dictionary[source] = target
+          register(source,target)
         end
       end
 
       def dump
         collection_names.each do |collection_name|
-          File.open("tmp/#{self.name.downcase.gsub(/\W+/,'_')}_#{collection_name}.yml", 'w+') do |file|
+          File.open(File.join(File.dirname(__FILE__), "../tmp/#{self.name.downcase.gsub(/\W+/,'_')}_#{collection_name}.yml"), 'w+') do |file|
             file.puts YAML.dump(send(collection_name))
           end
         end
+      end
+
+      def register(source,target)
+        dictionary[source] = target
       end
     end
 
@@ -94,17 +98,55 @@ module Conversion
 end
 
 class Reviewer < Conversion::Base
+  class Source
+    def review_id; 'review-1'; end
+  end
+  def self.sources
+    [Source.new,Source.new]
+  end
+
+  def self.register(source, target)
+    dictionary[source.review_id] ||= {}
+    dictionary[source.review_id][source] = target
+  end
 end
 
 class Author < Conversion::Base
+  class Source
+    def review_id; 'review-1'; end
+  end
+  def self.sources
+    [Source.new,Source.new,Source.new]
+  end
+
+  def self.register(source, target)
+    dictionary[source.review_id] ||= {}
+    dictionary[source.review_id][source] = target
+  end
 end
 
 class Review < Conversion::Base
+  def review_id; 'review-1'; end
   def create!
     images.each do |image|
       Image.convert_source!(image)
     end
+    authors.each do |author|
+      puts author.inspect
+    end
+
+    reviewers.each do |reviewer|
+      puts reviewer.inspect
+    end
     super
+  end
+
+  def reviewers
+    Reviewer.dictionary[review_id]
+  end
+
+  def authors
+    Author.dictionary[review_id]
   end
 
   def images
@@ -120,8 +162,8 @@ end
 
 Conversion.register Reviewer
 Conversion.register Author
-Conversion.register Review
 Conversion.register Image
+Conversion.register Review
 
 Conversion.transaction do |converter|
   converter.convert!
