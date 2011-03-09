@@ -4,6 +4,7 @@ require 'erb'
 require 'yaml'
 
 Dir.glob(File.join(File.dirname(__FILE__), "../src/yml/*.yml")).each do |filename|
+  puts "Processing #{filename}"
   object = YAML.load_file(filename)
   buffer = ERB.new(File.read(File.join(File.dirname(__FILE__), '../src/template.erb.html'))).result(binding)
   target_filename = File.join(File.dirname(__FILE__), "../src/output/review-#{object['review_id']}.html")
@@ -11,7 +12,7 @@ Dir.glob(File.join(File.dirname(__FILE__), "../src/yml/*.yml")).each do |filenam
   File.open(target_filename, 'w+') do |file|
     file.puts buffer
   end
-  regexp_for_split = /(\<|\>|\s)+/
+  regexp_for_split = /./
   target = buffer.split(regexp_for_split).join("\n")
   source = File.read(source_filename).split(regexp_for_split).join("\n")
 
@@ -24,7 +25,8 @@ Dir.glob(File.join(File.dirname(__FILE__), "../src/yml/*.yml")).each do |filenam
 
     diff = `diff #{tmp_source_filename} #{tmp_target_filename} -EwBb`.strip
     if diff.any?
-      puts "Review differences for Review #{object['review_id']}:\n\n#{diff}"
+      require 'ruby-debug'; debugger; true;
+      puts "Review differences for Review #{object['review_id']}:\n\n#{diff}\n\n#{diff.inspect}"
     end
   ensure
     File.unlink(tmp_target_filename) if File.exist?(tmp_target_filename)
