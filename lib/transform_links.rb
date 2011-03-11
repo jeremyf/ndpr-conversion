@@ -39,32 +39,30 @@ File.open(output_image_filename, 'w+') do |file|
   file.puts YAML.dump(@images)
 end
 
-@links = @source_links.inject({}) do |mem, from|
-  to = nil
+@links = @source_links.inject([]) do |mem, from|
+  pairing = {:source => from}
   case from
   when /\Afile\:\//i then
     if from =~ (/\A[^\#]*(\#.*)\Z/)
-      to = $1
+      pairing[:target] = $1
     end
   when /\A\#/ then
-    to = nil
+    pairing[:target] = from
+  when /\#(.*)\Z/
+    pairing[:target] = "##{$1}"
   when /\A(\.\.)?\//
-    @ndpr << from
-    # puts from
+    pairing[:target] = "**VERIFY**"
   when /\Ahttps?:\/\/(cfweb-prod|ndpr)\.nd\.edu/
-    # Check these
-    # This is going to require some attention
-    @ndpr << from
-    # puts from
+    pairing[:target] = "**VERIFY**"
   when /\Ahttps?:\/\/ndpr\.icaap\.org/
-    @old_site << from
+    pairing[:target] = "**VERIFY**"
   else
-    @other << from
-    # puts from
-    # open(from)
+    pairing[:target] = "**VERIFY**"
   end
+  mem << pairing
 end
 
-puts "NDPR:\n\t#{@ndpr.sort.join("\n\t")}"
-puts "Old Site?:\n\t#{@old_site.sort.join("\n\t")}"
-puts "Other:\n\t#{@other.sort.join("\n\t")}"
+output_image_filename = File.join(File.dirname(__FILE__), "../storage/serializations/transformed-links.yml")
+File.open(output_image_filename, 'w+') do |file|
+  file.puts YAML.dump(@links)
+end
