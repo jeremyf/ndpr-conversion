@@ -4,7 +4,9 @@ require 'yaml'
 require 'logger'
 log     = Logger.new(File.join(File.dirname(__FILE__), '../tmp/parse_source.log'), 5, 10*1024)
 
-exceptions = []
+@exceptions = []
+@images = Set.new
+@links = Set.new
 log.info "\n"
 log.info "=" * 80
 log.info "=" * 80
@@ -13,6 +15,28 @@ log.info "Parsing HTML File"
 log.info "\n"
 log.info "=" * 80
 log.info "\n"
+
+def look_for_images(content, dictionary = {})
+  dictionary['images'] ||= []
+  (content/"img").each do |image|
+    src = image.get_attribute('src')
+    if src.to_s.strip =~ /^\#/
+      dictionary['images'] << src
+      @images << src
+    end
+  end
+end
+
+def look_for_links(content, dictionary = {})
+  dictionary['links'] ||= []
+  (content/"a").each do |image|
+    href = image.get_attribute('href')
+    unless href.to_s.strip == ''
+      dictionary['links'] << href
+      @links << href
+    end
+  end
+end
 
 Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filename|
   begin
@@ -26,8 +50,12 @@ Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filen
       doc = open(filename) { |file| Hpricot(file) }
 
       doc.search("#content #review").each do |content|
-        original_html = content.to_original_html.sub("<div id=\"review\">", '')[0..-7]
         dictionary['review_id']    = review_id.strip.to_i
+
+        look_for_images(content, dictionary)
+        look_for_links(content, dictionary)
+
+        original_html = content.to_original_html.sub("<div id=\"review\">", '')[0..-7]
         [
           ['catalog_id', 'h1', nil],
           ['authors', 'h4', nil],
@@ -53,6 +81,8 @@ Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filen
         log.info "\t\tReview Title: #{dictionary['review_title']}"
         log.info "\t\tBibliography: #{dictionary['bibliography']}"
         log.info "\t\tReviewer: #{dictionary['reviewer']}"
+        log.info "\t\tImages: #{dictionary['images'].join(', ')}"
+        log.info "\t\tLinks: #{dictionary['links'].join(', ')}"
 
         # dictionary['catalog_id']   = node.inner_html.strip
         # dictionary['authors']      = (content/"h4").first.inner_html.strip
@@ -68,12 +98,21 @@ Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filen
       log.info "\tEnd processing review ID: #{review_id}"
     end
   rescue RuntimeError => e
-    exceptions << [filename, e]
+    @exceptions << [filename, e]
   end
 end
 
+File.open(File.join(File.dirname(__FILE__), "../src/transformations/source-images.yml"), 'w+') do |file|
+  file.puts YAML.dump(@images.to_a)
+end
+
+File.open(File.join(File.dirname(__FILE__), "../src/transformations/source-links.yml"), 'w+') do |file|
+  file.puts YAML.dump(@links.to_a)
+end
+
+
 log.info "\tExceptions"
-exceptions.each do |exception|
+@exceptions.each do |exception|
   log.info "\t\t#{exception}"
 end
 log.info "\n"
