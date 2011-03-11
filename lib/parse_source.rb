@@ -20,10 +20,8 @@ def look_for_images(content, dictionary = {})
   dictionary['images'] ||= []
   (content/"img").each do |image|
     src = image.get_attribute('src')
-    if src.to_s.strip =~ /^\#/
-      dictionary['images'] << src
-      @images << src
-    end
+    dictionary['images'] << src
+    @images << src
   end
 end
 
@@ -38,10 +36,10 @@ def look_for_links(content, dictionary = {})
   end
 end
 
-Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filename|
+Dir.glob(File.join(File.dirname(__FILE__), '../storage/original/*.html')).each do |filename|
   begin
     log.info
-    # filename = "/Users/jeremyf/Documents/Repositories/git/ndpr-conversion/lib/../src/review-2521.html"
+    # filename = "/Users/jeremyf/Documents/Repositories/git/ndpr-conversion/lib/../storage/review-2521.html"
     dictionary = {}
     review_id = File.basename(filename).gsub(/review-(\d*)\.html/,'\1')
     log.info "\tBegin processing review ID: #{review_id}"
@@ -92,7 +90,7 @@ Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filen
         # review_content = (content/"div#hr").first.following_siblings.collect{|sib| sib.to_original_html}.join("\n")
         dictionary['content']      = original_html.strip
       end
-      File.open(File.join(File.dirname(__FILE__), "../src/yml/review-#{review_id}.yml"), 'w+') do |file|
+      File.open(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/review-#{review_id}.yml"), 'w+') do |file|
         file.puts YAML.dump(dictionary)
       end
       log.info "\tEnd processing review ID: #{review_id}"
@@ -102,11 +100,11 @@ Dir.glob(File.join(File.dirname(__FILE__), '../src/html/*.html')).each do |filen
   end
 end
 
-File.open(File.join(File.dirname(__FILE__), "../src/transformations/source-images.yml"), 'w+') do |file|
+File.open(File.join(File.dirname(__FILE__), "../storage/serializations/source-images.yml"), 'w+') do |file|
   file.puts YAML.dump(@images.to_a)
 end
 
-File.open(File.join(File.dirname(__FILE__), "../src/transformations/source-links.yml"), 'w+') do |file|
+File.open(File.join(File.dirname(__FILE__), "../storage/serializations/source-links.yml"), 'w+') do |file|
   file.puts YAML.dump(@links.to_a)
 end
 

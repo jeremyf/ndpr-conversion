@@ -3,11 +3,11 @@
 require 'erb'
 require 'yaml'
 
-Dir.glob(File.join(File.dirname(__FILE__), "../src/yml/*.yml")).each do |filename|
+Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/*.yml")).each do |filename|
   object = YAML.load_file(filename)
-  buffer = ERB.new(File.read(File.join(File.dirname(__FILE__), '../src/template.erb.html'))).result(binding)
-  target_filename = File.join(File.dirname(__FILE__), "../src/output/review-#{object['review_id']}.html")
-  source_filename = File.join(File.dirname(__FILE__), "../src/html/review-#{object['review_id']}.html")
+  buffer = ERB.new(File.read(File.join(File.dirname(__FILE__), '../storage/template.erb.html'))).result(binding)
+  target_filename = File.join(File.dirname(__FILE__), "../storage/templated-output/review-#{object['review_id']}.html")
+  source_filename = File.join(File.dirname(__FILE__), "../storage/original/review-#{object['review_id']}.html")
   File.open(target_filename, 'w+') do |file|
     file.puts buffer
   end
