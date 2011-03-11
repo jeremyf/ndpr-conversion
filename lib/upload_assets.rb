@@ -20,7 +20,7 @@ config.each do |key, attributes|
     rescue RestClient::Found => e
       uri = URI.parse(e.response.headers[:location])
       path = uri.path.sub(/\/admin\/assets\//)
-      attributes[:conductor] = File.join('/', path, File.basename(upload_filename))
+      attributes[:conductor_path] = File.join('/', path, File.basename(upload_filename))
     end
   end
 end
