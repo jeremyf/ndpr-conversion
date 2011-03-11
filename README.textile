@@ -1,0 +1,8 @@
+Order of Execution
+
+# lib/crawl.rb
+# lib/parse_source.rb
+# lib/render.rb
+# lib/transform_links.rb
+# lib/upload_assets.rb
+# lib/update_content_images.rb
