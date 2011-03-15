@@ -8,11 +8,12 @@ link_transformation_config = YAML.load_file(File.join(File.dirname(__FILE__), ".
 Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**/*.yml")).each do |filename|
   file_info = YAML.load_file(filename)
 
+  file_info['transformed_content'] = file_info['content'].dup
   # Update images
   file_info['images'].each do |image_path|
     if target_config = asset_transformation_config[image_path]
       if path = (target_config[:conductor_path] || target_config['conductor_path'])
-        file_info['transformed_content'] ||= file_info['content']
+        file_info['transformed_content'] ||= file_info['content'].dup
         file_info['transformed_content'].gsub!(/(["|'])#{image_path}(["|'])/, '\1' << path << '\2')
       end
     end
@@ -22,7 +23,7 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
   file_info['links'].each do |link_path|
     if target_config = link_transformation_config[link_path]
       if path = (target_config[:target] || target_config['target'])
-        file_info['transformed_content'] ||= file_info['content']
+        file_info['transformed_content'] ||= file_info['content'].dup
         file_info['transformed_content'].gsub!(/(["|'])#{link_path}(["|'])/, '\1' << path << '\2')
       end
     end
