@@ -2,6 +2,7 @@
 
 require 'open-uri'
 
+# Read through the review ides and write the file.
 review_ids_filename = File.join(File.dirname(__FILE__), '../storage/review_ids.txt')
 File.open(review_ids_filename, "r") do |infile|
   while (line = infile.gets)

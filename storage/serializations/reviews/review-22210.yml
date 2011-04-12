@@ -1,0 +1,804 @@
+--- 
+catalog_id: 2011.01.21
+bibliography: Hartry Field, <em>Saving Truth from Paradox</em>, Oxford University Press, 2008, 406pp., $40.00 (pbk), ISBN 9780199230747.
+images: 
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+- /images/review-images/saving-truth-from-paradox-german-l-small.gif
+review_id: 22210
+content: "<p style=\"text-align:center;\">I</p>\r\n\
+  \r\n\n\
+  <p><i>Saving Truth from Paradox</i> (<i>STFP</i> henceforth) is one of the most impressive works on semantic\r\n\
+  paradoxes to have appeared in recent years. Though written with great clarity\r\n\
+  and meticulous rigour, the difficulty of the issues dealt with, the density of\r\n\
+  the argumentative structure and the width of the ground covered by the author\r\n\
+  turn reading <i>STFP</i> into a laborious and yet highly-rewarding task. The\r\n\
+  book, a must-read for everyone interested in semantic paradoxes (or in\r\n\
+  philosophical logic more generally), develops a highly-sophisticated theory of\r\n\
+  truth that aims at solving the resilient problems posed by the Liar Paradox.</p>\r\n\
+  \r\n\n\
+  <p>We become entangled in the Liar Paradox when we reason\r\n\
+  about a sentence, Q, that turns out to be logically equivalent to a sentence\r\n\
+  asserting Q&rsquo;s falsity or -- in the version we will focus on here -- to a\r\n\
+  sentence asserting Q&rsquo;s untruth: &not;True(&lt;Q&gt;). By appealing to quite na\xC3\xAFve assumptions\r\n\
+  about the meaning of the truth predicate, in particular to a semantic principle\r\n\
+  as basic as Tarski&rsquo;s T-Schema:</p>\r\n\
+  \r\n\n\
+  <p>(<b>TS</b>) True(&lt;A&gt;) &harr; A,</p>\r\n\
+  \r\n\n\
+  <p>we can easily infer (*) from Q&rsquo;s instance of TS:</p>\r\n\
+  \r\n\n\
+  <p>(*) True(&lt;Q&gt;) &harr; &not;True(&lt;Q&gt;).</p>\r\n\
+  \r\n\n\
+  <p>But, in classical logic, (*) leads to the contradiction:</p>\r\n\
+  \r\n\n\
+  <p>(+) True(&lt;Q&gt;) &and; &not;True(&lt;Q&gt;).</p>\r\n\
+  \r\n\n\
+  <p>Most theories of truth try to solve the Liar Paradox by\r\n\
+  restricting TS in one way or another, but in <i>STFP</i> Hartry Field argues that this\r\n\
+  is a mistake. He describes as <i>logical dogmatism</i> the view that\r\n\
+  restricting semantic principles like TS should always be preferred to revising\r\n\
+  classical logic. The truth predicate is, according to him, &quot;a device of\r\n\
+  infinite conjunction or disjunction (or, more accurately, a device of\r\n\
+  quantification)&quot; (p. 210) and this means that it mainly plays a <i>logical</i>\r\n\
+  \r\n\
+  role, one that crucially depends on TS and on the &quot;transparency&quot; of\r\n\
+  the truth predicate, understood along the lines of the following\r\n\
+  Intersubstitutivity Principle:</p>\r\n\
+  \r\n\n\
+  <p>(<b>IP</b>) For every sentence\r\n\
+  A, the substitution in any non-opaque sentential context of any occurrence of a\r\n\
+  sentence B by True (&lt;B&gt;) (or vice versa) results in a sentence logically\r\n\
+  equivalent to A.</p>\r\n\
+  \r\n\n\
+  <p>If Field&rsquo;s deflationary view about truth is correct,\r\n\
+  restricting TS or IP need not be any less harmful for our ordinary\r\n\
+  understanding of meaning and logic than restricting other logical principles\r\n\
+  concerning terms such as &lsquo;or&rsquo;, &lsquo;and&rsquo;, &lsquo;not&rsquo;, etc., would be. A revision of the\r\n\
+  logic of truth is also a revision of logic. So, when assessing an alleged\r\n\
+  solution to the Liar Paradox, it is the whole logic plus truth theory that\r\n\
+  should be evaluated.</p>\r\n\
+  \r\n\n\
+  <p>A problem for most theories of truth is that they are\r\n\
+  unable to express consistently their own solution to the Liar. When they try to\r\n\
+  do so, they fall prey to strengthened versions of the paradox. For instance,\r\n\
+  theories that declare that Q is neither true nor false are forbidden from\r\n\
+  saying so in the language of the theories, since that assertion would imply\r\n\
+  that Q is not true, reinstating the paradox again. Field tries to overcome\r\n\
+  these expressive limitations by introducing a predicate of determinateness, D,\r\n\
+  into the language. Pathological sentences are then classified as being neither\r\n\
+  determinately true nor determinately false. The challenge is to show that the\r\n\
+  semantics of D fully characterizes all pathological sentences without creating\r\n\
+  new paradoxes.</p>\r\n\
+  \r\n\n\
+  <p>Field&rsquo;s goal in <i>STFP</i> is to offer a theory\r\n\
+  of truth for a language <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> which contains its own truth\r\n\
+  predicate that meets the following conditions:</p>\r\n\
+  \r\n\
+  <ol>\r\n  <li>It preserves IP in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>.</li>\r\n  <li>It respects TS.</li>\r\n  <li>It is free of semantic\r\n  paradoxes: not only paradoxes concerning the truth predicate (the Liar, Curry),\r\n  but also paradoxes about the predicate &lsquo;true of&rsquo; (Grelling) and paradoxes of\r\n  definability (Berry and K&ouml;nig).</li>\r\n  <li>It contains a predicate of\r\n  determinateness, D, in order to characterize problematic sentences;</li>\r\n  <li>And it does this while\r\n  avoiding the &quot;revenge problem&quot; (strengthened versions of the\r\n  paradoxes).</li>\r\n  <li>In fulfilling 1-5, it alters classical logic as little as possible, so as not to cripple ordinary reasoning.</li>\r\n\
+  </ol>\r\n\
+  \r\n\n\
+  <p>Together with these major goals, Field also pursues a\r\n\
+  secondary (but relevant and ambitious) goal in <i>STFP</i>: to give an account\r\n\
+  of truth that deals with the Sorites Paradox, while respecting the intuition\r\n\
+  that vague predicates do not have sharp boundaries. The D predicate can be used\r\n\
+  to characterize sentences that fail to be determinately true due to the\r\n\
+  presence of vague predicates. Field&rsquo;s aim is to show that iteration of the D\r\n\
+  predicate does not generate sharp boundaries at any point.</p>\r\n\
+  \r\n\n\
+  <p><i>STFP</i> is structured in five parts. The first contains selective background on relevant\r\n\
+  issues related to the Liar Paradox and the concept of truth. In the first two\r\n\
+  chapters, Field reviews the ways in which a language can express\r\n\
+  self-referential sentences and the consequences that Tarski&rsquo;s theorem has for\r\n\
+  the project of defining truth. Tarski&rsquo;s theorem affects the common definition of\r\n\
+  validity in terms of (logically) necessary preservation of truth and opens a\r\n\
+  gap between truth definitions for restricted and unrestricted languages. A\r\n\
+  related topic is also introduced in chapter 2: an ideal for a theory of truth\r\n\
+  would be for all of its axioms to be true and all of its rules to be truth\r\n\
+  preserving. But if this ideal were met, we could prove by induction the\r\n\
+  soundness of the theory and conclude its consistency from its soundness,\r\n\
+  contradicting G&ouml;del&rsquo;s second incompleteness theorem. So every theory (and that,\r\n\
+  of course, includes Field&rsquo;s own solution) has to fall short of this ideal. In\r\n\
+  the rest of the book, when Field analyses several different theories of truth,\r\n\
+  he always carefully determines where the intuitive argument for soundness breaks\r\n\
+  down; thereby, in a sense, measuring the degree of self-reflection of the\r\n\
+  theories. In chapter 3, Field presents Kripke&rsquo;s theory of truth as based on\r\n\
+  Kleene&rsquo;s strong logic. Although this theory\r\n\
+  preserves IP, Kleene&rsquo;s conditional is so weak that even the law A &rarr; A is\r\n\
+  invalid and therefore TS does not hold unrestrictedly. Furthermore, the theory\r\n\
+  has well-known expressive limitations and cannot characterize paradoxical\r\n\
+  sentences. These limitations are partly overcome by adopting Luckasiewicz&rsquo;s infinite-valued propositional logic (ch. 4). In such a\r\n\
+  semantic framework we can keep IP and TS and define a &lsquo;determinateness&rsquo; operator D that can be used to\r\n\
+  characterize paradoxical sentences. Unfortunately, this theory has to be kept\r\n\
+  at the propositional level, since Field shows that adding quantifiers would\r\n\
+  create new paradoxes (formulated in terms of transfinite iterations of the D operator). Part I of <i>STFP</i> also\r\n\
+  includes an interlude on vagueness and the paradoxes of definability (ch. 5).</p>\r\n\
+  \r\n\n\
+  <p>The second part of the book offers a wide critical survey\r\n\
+  of most of the best-known approaches to the Liar Paradox that restrict IP and\r\n\
+  TS, but try to minimize the cost of doing so. Field describes these theories --\r\n\
+  a bit misleadingly perhaps -- as &quot;broadly classical&quot;, meaning that\r\n\
+  before the dilemma: &quot;Should we restrict TS or some classical principle?&quot; they always embraced the first option. Here, he discusses gap and glut theories\r\n\
+  (chs. 7-8), supervaluationist and revision rule theories (chs. 10-12), as well\r\n\
+  as stratified and contextual truth theories (ch. 14). For him, the main problem\r\n\
+  with all these theories is their failure to preserve IP and the damage this\r\n\
+  causes to the logical function of the truth predicate (ch. 13). A second\r\n\
+  problem with these theories is that they fail to self-reflect in damaging ways:\r\n\
+  they declare some of their own axioms untrue or declare some of their own rules\r\n\
+  not to be unrestrictedly truth-preserving.</p>\r\n\
+  \r\n\n\
+  <p>In the third and fourth parts of <i>STFP</i> (chs. 15-23) Field develops his paracomplete theory of truth.\r\n\
+  Then in the fifth and last part of the book (chs. 24-27) he discusses versions\r\n\
+  of Priest&rsquo;s paraconsistent dialetheism. These two theories solve paradoxes by\r\n\
+  restricting classical logic: paracomplete solutions stop the inference from (*)\r\n\
+  to (+); dialetheists accept (+), but restrict the explosion rule so that (+)\r\n\
+  does not imply everything.</p>\r\n\
+  \r\n\n\
+  <p>We trust that this sketch of <i>STFP</i> will convince the reader of the hopeless task of giving a\r\n\
+  detailed discussion of the content of the book in the pages of this review. In\r\n\
+  what follows, we will outline Field&rsquo;s paracomplete solution to the paradoxes\r\n\
+  and discuss some aspects of it.</p>\r\n\
+  \r\n\
+  <p style=\"text-align:center;\">II</p>\r\n\
+  \r\n\n\
+  <p>The technical development of Field&rsquo;s solution starts from\r\n\
+  a ground first-order language <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> that lacks a truth predicate and\r\n\
+  contains the usual logical constants plus Field&rsquo;s conditional: &lsquo;&rarr;&rsquo;\r\n\
+  (ch. 16). He considers the non-logical symbols of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> interpreted in a\r\n\
+  classical model M. Next, he expands <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> into a language, <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>,\r\n\
+  which contains a truth predicate &lsquo;T&rsquo;. The sentences of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>\r\n\
+  will initially be interpreted according to Kleene&rsquo;s strong logic in a semantic\r\n\
+  framework with three truth-values: {0, &frac12;, 1}. The most relevant feature\r\n\
+  of Field&rsquo;s semantics is the way conditionals are evaluated. Field combines\r\n\
+  ideas coming from different truth theories to create the semantics of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+\r\n\
+  </sup>He uses Kripkean fixed points to define the interpretation of the truth\r\n\
+  predicate and revision rules to define the interpretation of the conditional\r\n\
+  operator. The interpretations are constructed in a transfinite series of\r\n\
+  stages. In the process, all formulas which are conditionals are considered as\r\n\
+  (generalized) atomic formulas. Initially, we have a valuation, v<sub>0</sub>,\r\n\
+  that assigns to all conditionals the value &frac12;.<a href=\"#_edn1\" name=\"_ednref1\" title=\"\"><sup>[1]</sup></a>\r\n\
+  Using M, v<sub>0 </sub>is extended to all atomic formulas. By applying Kripke&rsquo;s\r\n\
+  Kleene-based minimal fixed point construction, Field reaches a valuation, X<sub>0</sub>,\r\n\
+  for the truth predicate that respects IP. But conditionals do not get a\r\n\
+  compositional semantics at the valuation determined by X<sub>0</sub> since all\r\n\
+  of them have value &frac12; independently of the values of their antecedents\r\n\
+  and consequents. Revision rules are introduced at this point to deal with this\r\n\
+  problem. A new valuation for conditionals, v<sub>1</sub>, is defined according\r\n\
+  to the following rule: v<sub>1</sub> assigns 0 to a conditional when the value\r\n\
+  of its antecedent (with respect to X<sub>0</sub>) is greater than the value of\r\n\
+  its consequent (with respect to X<sub>0</sub>), and assigns 1 otherwise. Thus,\r\n\
+  v<sub>1</sub> enables us to construct another Kripkean fixed point, X<sub>1</sub>,\r\n\
+  which provides a new interpretation to the truth predicate, one, moreover, that\r\n\
+  affords a more adequate evaluation for the conditionals. This construction can\r\n\
+  be transfinitely iterated using this rule of revision (|A|<sub>&alpha;</sub> represents the value of sentence A at stage &alpha;):\r\n\
+  <a href=\"#_edn2\" name=\"_ednref2\" title=\"\"><sup>[2]</sup></a></p>\r\n\
+  \r\n\n\
+  <p>|A &rarr; B|<sub>&alpha;</sub> =\r\n\
+  1 if (&exist;&beta; &lt; &alpha;) (&forall;&gamma;) [&gamma; &le; &beta; &lt; &alpha; &rarr; |A|<sub>&gamma;</sub> &le; |B|<sub>&gamma;</sub>]</p>\r\n\
+  \r\n\
+  <p style=\"margin-left:51px\">= 0 if (&exist;&beta; &lt; &alpha;) (&forall;&gamma;) [&gamma; &le; &beta; &lt; &alpha; &rarr; |A|<sub>&gamma;</sub> &gt; |B|<sub>&gamma;</sub>]</p>\r\n\
+  \r\n\
+  <p style=\"margin-left:51px\">= &frac12; otherwise.</p>\r\n\
+  \r\n\n\
+  <p>Under the revision process, each sentence A behaves in\r\n\
+  one of the following three ways. Either there is an ordinal, &alpha;,\r\n\
+  such that |A|<sub>&alpha;</sub> = 1 at all ordinals &beta; &ge; &alpha;, or there is an ordinal, &alpha;, such that at |A|<sub>&alpha;</sub> = 0 at all &beta; &ge; &alpha;,\r\n\
+  or neither of these two situations obtains. In the first two cases, we say that\r\n\
+  A&rsquo;s ultimate value is 1 or 0 respectively; in the third case, A&rsquo;s ultimate\r\n\
+  value is &frac12;. The third case covers very different situations (A\r\n\
+  eventually gets constant value &frac12; after some ordinal &alpha;, or\r\n\
+  A&rsquo;s truth-value oscillates between two or more truth-values throughout the\r\n\
+  revision procedure following different patterns). The ultimate values of the formulas\r\n\
+  of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> provide a three-valued semantics for <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>\r\n\
+  that satisfies IP and TS and has a conditional that respects many classical\r\n\
+  rules and principles (sect. 17.4).</p>\r\n\
+  \r\n\n\
+  <p>Field analyses several aspects of this construction in\r\n\
+  detail. For instance, he shows in sect. 16.2 that there are ordinals, &alpha;,\r\n\
+  such that the value of each sentence at stage &alpha; in the process coincides\r\n\
+  with its ultimate value (<i>acceptable\r\n\
+  ordinals</i>). Given that the Kleene rules for connectives hold throughout the\r\n\
+  revision process, this ensures that the ultimate values of formulas other than\r\n\
+  conditionals respect Kleene&rsquo;s compositional semantics. Moreover, in sect. 17.1\r\n\
+  Field offers an algebraic semantics on an infinite set of truth-values that\r\n\
+  makes the different patterns of revision of the sentences explicit and that\r\n\
+  gives a compositional semantics to the conditional.<a href=\"#_edn3\" name=\"_ednref3\" title=\"\"><sup>[3]</sup></a></p>\r\n\
+  \r\n\n\
+  <p>This semantics offers a paracomplete theory of truth,\r\n\
+  i.e., one in which the Law of Excluded Middle (LEM) is invalid. According to\r\n\
+  Field, it is indeterminate whether some sentences containing vague predicates\r\n\
+  are true: this already shows that LEM is contentious. Moreover, by rejecting\r\n\
+  LEM, a natural proof of (+) from (*) is blocked. Unfortunately, this sacrifice\r\n\
+  is not enough. We need to restrict other classically valid rules of inference\r\n\
+  and principles in order to block the Liar Paradox and other semantic paradoxes\r\n\
+  (such as Curry&rsquo;s Paradox). The rules of <i>Reductio ad Absurdum</i> (RA) and <i>Conditional\r\n\
+  Proof</i> (CP) are the most significant losses. But laws governing conditionals\r\n\
+  such as <i>importation</i>, <i>exportation</i> or <i>contraction</i> are not\r\n\
+  generally valid either. Furthermore, many classical patterns of reasoning are\r\n\
+  validated only in the rule form, not in the law form. For instance, modus\r\n\
+  ponens is valid (A, A &rarr; B |= B), but |&ne; (A &and; (A &rarr; B)) &rarr; B. Field justifies this asymmetry by appealing to the\r\n\
+  difference between conditional assertion and assertion of a conditional: the\r\n\
+  latter has more stringent conditions than the former (sects. 17.4, 10.6-7). He\r\n\
+  also points out that these losses are not very damaging since, in the case\r\n\
+  where all the premises satisfy LEM, classical logic can be safely applied. In\r\n\
+  contradistinction to the bad self-reflection properties of other theories, the\r\n\
+  paracomplete theory declares all its axioms true and all its truth rules truth-preserving,\r\n\
+  even though it refrains from declaring some of its other logic rules\r\n\
+  truth-preserving.</p>\r\n\
+  \r\n\n\
+  <p>With this logic, Field claims to have fulfilled goals 1,\r\n\
+  2 and 3 mentioned above. With respect to goal 4, Field uses his conditional to\r\n\
+  define a determinateness operator, D, that can be used to describe defective\r\n\
+  sentences without, at least apparently, falling prey to new paradoxes (as\r\n\
+  expressed in goal 5). The operator D satisfies that: |= DA &rarr; A\r\n\
+  and that DA is, in general, stronger than A. When A is a pathological sentence,\r\n\
+  &not;DA\r\n\
+  &and;\r\n\
+  &not;D&not;A\r\n\
+  will be a true sentence expressing that A is defective.<a href=\"#_edn4\" name=\"_ednref4\" title=\"\"><sup>[4]</sup></a> Other\r\n\
+  properties of the determinateness operator can be found in sect. 15.2. Field\r\n\
+  shows there that in his semantics, if we define DA as A &and; &not;(A &rarr; &not;A), the operator D satisfies\r\n\
+  the right properties. This shows that the operator is definable in the\r\n\
+  language; hence no worries about the consistency of the new operator arise.</p>\r\n\
+  \r\n\n\
+  <p>Using the new operator and G&ouml;del&rsquo;s diagonal theorem we\r\n\
+  can form a new liar-like sentence, Q<sub>1</sub>, which is logically equivalent\r\n\
+  to &not;DQ<sub>1</sub>.\r\n\
+  A correct classification of this sentence cannot be given by &not;DQ<sub>1</sub>,\r\n\
+  on pain of contradiction, but in Field&rsquo;s semantics we can prove that &not;DDQ<sub>1</sub>.\r\n\
+  Again this invites the creation of a new liar-like sentence, Q<sub>2</sub>,\r\n\
+  which is logically equivalent to &not;DDQ<sub>2</sub>. In general, there are sentences Q<sub>&alpha;</sub> such that Q<sub>&alpha;</sub>\r\n\
+  is logically equivalent to &not;D<sup>&alpha;</sup>Q<sub>&alpha;</sub> when &alpha; is a finite ordinal and 'D<sup>&alpha;</sup>' stands for &alpha;\r\n\
+  concatenations of the D operator. But the construction can be extended to the limit case, &omega;,\r\n\
+  with the definition of D<sup>&omega;</sup>A as '&forall;&alpha;&lt;&omega; True(&lt;D<sup>&alpha;</sup>A&gt;)'. The\r\n\
+  question then arises of how far this construction can be extended into the\r\n\
+  transfinite ordinals. Field shows that the construction works well for ordinals\r\n\
+  that are hereditarily definable in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> (i.e., that can be\r\n\
+  defined in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> and such that all previous ordinals are also\r\n\
+  definable in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>). The key point of the construction is that\r\n\
+  as long as D<sup>&alpha;</sup> can be hereditarily defined in the language, the corresponding sentence Q<sub>&alpha;</sub>\r\n\
+  will not produce a paradox (because the instance of LEM, D<sup>&alpha;</sup>Q<sub>&alpha;</sub>\r\n\
+  &or;\r\n\
+  &not;D<sup>&alpha;</sup>Q<sub>&alpha;</sub>,\r\n\
+  will be inadmissible) and Q<sub>&alpha;</sub> will be correctly classified as &not;D<sup>&alpha;+1</sup>Q<sub>&alpha;</sub>.\r\n\
+  The Strengthened Liar for this Liar hierarchy of sentences, intuitively, would\r\n\
+  be a sentence, Q<sub>&infin;</sub>, equivalent to &not;D<sup>&infin;</sup>Q<sub>&infin;</sub>,\r\n\
+  where D<sup>&infin;</sup>A\r\n\
+  expresses the fact that A is D<sup>&alpha;</sup>A, for all D<sup>&alpha;</sup> in the Liar\r\n\
+  Hierarchy. But if D<sup>&infin;</sup>A quantifies over all well-behaved iterations of\r\n\
+  the D operator, it will itself be badly behaved and will not produce a new\r\n\
+  paradox. This can be made precise in different ways and Field argues that none\r\n\
+  of them produces a new paradox (ch. 22). For him, this supports the idea that\r\n\
+  his language has no need to be expanded and is sufficiently powerful to serve\r\n\
+  as its own metalanguage.</p>\r\n\
+  \r\n\
+  <p style=\"text-align:center;\">III</p>\r\n\
+  \r\n\n\
+  <p>A natural question to ask at this point is: Why should we\r\n\
+  adopt Field&rsquo;s Logic? Any discussion about logical matters has a normative\r\n\
+  dimension. After describing a logical system, it always makes sense to ask\r\n\
+  whether <i>we</i> <i>should reason according\r\n\
+  to it</i>. But this question cannot be answered unless we bear in mind some\r\n\
+  standards of &quot;correction&quot; defined in terms of principles that should\r\n\
+  be preserved, problems that should be solved, etc. The six desiderata listed\r\n\
+  above provide a rough outline of the normative background used by Field in\r\n\
+  order to compare different logics and single out the best ones. Obviously, if\r\n\
+  two theories share the same goals and normative standards, any comparison\r\n\
+  between them will proceed by assessing their respective success in achieving <i>those</i>\r\n\
+  goals. However, when two theories pursue different goals and pay attention to\r\n\
+  different normative standards, things become more complicated.</p>\r\n\
+  \r\n\n\
+  <p>Field has extensively argued elsewhere<a href=\"#_edn5\" name=\"_ednref5\" title=\"\"><sup>[5]</sup></a>\r\n\
+  that truth is merely a logical device of quantification. That is, partly, why\r\n\
+  the question he addresses in <i>STFP</i> is:\r\n\
+  <i>what is the best way to keep </i>IP<i> and </i>TS<i> unrestricted while avoiding semantic paradoxes and damaging ordinary\r\n\
+  reasoning as little as possible?</i> His deflationary views about truth\r\n\
+  therefore play a prominent role in the constraints he places on any acceptable\r\n\
+  logic: insofar as the logical function carried out by the truth predicate\r\n\
+  crucially depends on IP, preserving IP intact becomes a non-negotiable goal. Of\r\n\
+  course, for many defenders of substantial theories of truth, IP and TS are\r\n\
+  negotiable (and not necessarily because they are &quot;logical dogmatists&quot;).\r\n\
+  But even if we assume a deflationary view of truth, the previous question does\r\n\
+  not seem to cover all the demands we place on an acceptable solution to the\r\n\
+  Liar Paradox.</p>\r\n\
+  \r\n\n\
+  <p>As Charles Chihara once stressed, paradoxes raise issues\r\n\
+  of two kinds. Some of them concern what he calls <i>the preventative problem</i>: that of finding a solution to the\r\n\
+  paradox, whereas others concern <i>the diagnostic problem</i>: &quot;the\r\n\
+  problem of pinpointing that which is deceiving us and, if possible, to explain\r\n\
+  how and why the deception was produced&quot;.<a href=\"#_edn6\" name=\"_ednref6\" title=\"\"><sup>[6]</sup></a> Two\r\n\
+  relevant criteria for assessing the merits of a solution to a paradox are: (<i>i</i>) whether it offers a <i>correct</i> diagnosis of the problem posed\r\n\
+  by the paradox; and (<i>ii</i>) whether the\r\n\
+  solution is adequate given the diagnosis. Russell&rsquo;s principle of vicious\r\n\
+  circularity, Kripke&rsquo;s notion of groundedness, Gupta and Belnap&rsquo;s theory of\r\n\
+  circular concepts or Priest&rsquo;s appeal to dialetheias and the Inclosure Scheme\r\n\
+  are attempts to solve the diagnostic problem. Trying to solve this problem may\r\n\
+  also show that certain tools employed in the construction of a semantic\r\n\
+  framework are not philosophically irrelevant. For instance, Gupta claims that\r\n\
+  the use of revision rules is linked to our understanding of circular concepts\r\n\
+  and the fact that truth is a circular concept is part of his diagnosis of the\r\n\
+  problems underlying the Liar Paradox. If the diagnosis is correct, the use of a\r\n\
+  revision rule in giving the meaning of truth is forced upon us, explaining the\r\n\
+  failure of some truth principles (such as TS). A correct answer to the\r\n\
+  diagnostic problem requires us to explain why certain concepts, rules of\r\n\
+  inference or principles (and <i>not others</i>)\r\n\
+  are relevant for us to understand the formation of the paradox. Preserving\r\n\
+  consistency by just rejecting some concepts, rules or principles would block\r\n\
+  the paradox, but it would not explain why we felt compelled to accept its\r\n\
+  conclusion in the first place.</p>\r\n\
+  \r\n\n\
+  <p>Now, the <i>only</i>\r\n\
+  problem posed by paradoxes that Field seems to address in <i>STFP</i> is that certain logical rules and principles are jointly\r\n\
+  inconsistent with IP and TS. As long as we preserve these principles, any\r\n\
+  solution that rejects some rules of inference or principles while only\r\n\
+  minimally damaging ordinary reasoning would be an acceptable solution to the\r\n\
+  paradoxes.<a href=\"#_edn7\" name=\"_ednref7\" title=\"\"><sup>[7]</sup></a>\r\n\
+  Notice that different solutions to the paradoxes could meet this requirement\r\n\
+  and that they could do so without advancing a diagnosis of what is wrong with\r\n\
+  the paradoxes (or, in other words, of why certain solutions should be preferred\r\n\
+  to other, similar solutions).</p>\r\n\
+  \r\n\n\
+  <p>Unfortunately, many of the topics discussed in the book\r\n\
+  could not find a place in this review. Chief among them are: the application of\r\n\
+  Field&rsquo;s paracomplete theory to the solution of the Sorites Paradox; the\r\n\
+  detailed examination of several different theories of truth in the second part\r\n\
+  of the book; the comparison between the paracomplete and the dialetheist\r\n\
+  solutions to the paradoxes; and the philosophical discussion of the notions of\r\n\
+  agreement and indeterminacy. The book is a valuable source of inspiration on\r\n\
+  all those topics. It will certainly shape the discussion on semantic paradoxes\r\n\
+  in the years to come.</p>\r\n\
+  \r\n\
+  \r\n\
+  <hr align=\"left\" size=\"1\" width=\"33%\">\r\n\
+  \r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref1\" name=\"_edn1\"\r\n\
+  title=\"\"><sup>[1]</sup></a> It is\r\n\
+  possible to start with a different valuation as long as it is\r\n\
+  &quot;transparent&quot;, i.e., as long as it respects IP in the context of <i>conditional</i> sentences.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref2\" name=\"_edn2\"\r\n\
+  title=\"\"><sup>[2]</sup></a> In the\r\n\
+  book, the construction is carried out for arbitrary formulas. In order to\r\n\
+  simplify matters we will only consider sentences and skip reference to variable\r\n\
+  assignments.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref3\" name=\"_edn3\"\r\n\
+  title=\"\"><sup>[3]</sup></a> The\r\n\
+  values of the algebraic semantics are based on the revision process itself.\r\n\
+  Therefore, the algebraic semantics does not simplify the search for the\r\n\
+  ultimate value of a sentence, since the application of the algebraic semantics\r\n\
+  requires the previous construction of the revision process.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref4\" name=\"_edn4\"\r\n\
+  title=\"\"><sup>[4]</sup></a> Since\r\n\
+  the semantics satisfies IP, defectiveness cannot be expressed by &not; T&lt;A&gt; &amp; &not; T&lt;&not;A&gt;, this being equivalent to the\r\n\
+  contradiction &not; A &amp; &not; &not; A.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref5\" name=\"_edn5\"\r\n\
+  title=\"\"><sup>[5]</sup></a> See <i>Truth and the Absence of Fact</i>, Oxford\r\n\
+  University Press, 2001.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref6\" name=\"_edn6\"\r\n\
+  title=\"\"><sup>[6]</sup></a> &quot;The Semantic Paradoxes: A Diagnostic Investigation&quot;, <i>Philosophical\r\n\
+  Review</i> 88: 590-618, 1979, p. 590.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref7\" name=\"_edn7\"\r\n\
+  title=\"\"><sup>[7]</sup></a> In general, Field does not seem to ascribe any particular philosophical relevance\r\n\
+  to the choosing of one semantics or another in order to create the theory of\r\n\
+  truth. For instance, Field would not object to someone's giving a semantics for\r\n\
+  the conditional by means of fixed points or by means of technical tools other\r\n\
+  than revision rules, as long as they could create a logic that satisfies as\r\n\
+  many intuitively acceptable rules as Field's semantics does.</p>"
+links: 
+- "#_edn1"
+- "#_edn2"
+- "#_edn3"
+- "#_edn4"
+- "#_edn5"
+- "#_edn6"
+- "#_edn7"
+- "#_ednref1"
+- "#_ednref2"
+- "#_ednref3"
+- "#_ednref4"
+- "#_ednref5"
+- "#_ednref6"
+- "#_ednref7"
+authors: Hartry Field
+reviewer: Jos&#233; Mart&#237;nez Fern&#225;ndez, Universitat de Barcelona and Jordi Valor Abad, Universitat de Val&#232;ncia
+transformed_content: "<p style=\"text-align:center;\">I</p>\r\n\
+  \r\n\n\
+  <p><i>Saving Truth from Paradox</i> (<i>STFP</i> henceforth) is one of the most impressive works on semantic\r\n\
+  paradoxes to have appeared in recent years. Though written with great clarity\r\n\
+  and meticulous rigour, the difficulty of the issues dealt with, the density of\r\n\
+  the argumentative structure and the width of the ground covered by the author\r\n\
+  turn reading <i>STFP</i> into a laborious and yet highly-rewarding task. The\r\n\
+  book, a must-read for everyone interested in semantic paradoxes (or in\r\n\
+  philosophical logic more generally), develops a highly-sophisticated theory of\r\n\
+  truth that aims at solving the resilient problems posed by the Liar Paradox.</p>\r\n\
+  \r\n\n\
+  <p>We become entangled in the Liar Paradox when we reason\r\n\
+  about a sentence, Q, that turns out to be logically equivalent to a sentence\r\n\
+  asserting Q&rsquo;s falsity or -- in the version we will focus on here -- to a\r\n\
+  sentence asserting Q&rsquo;s untruth: &not;True(&lt;Q&gt;). By appealing to quite na\xC3\xAFve assumptions\r\n\
+  about the meaning of the truth predicate, in particular to a semantic principle\r\n\
+  as basic as Tarski&rsquo;s T-Schema:</p>\r\n\
+  \r\n\n\
+  <p>(<b>TS</b>) True(&lt;A&gt;) &harr; A,</p>\r\n\
+  \r\n\n\
+  <p>we can easily infer (*) from Q&rsquo;s instance of TS:</p>\r\n\
+  \r\n\n\
+  <p>(*) True(&lt;Q&gt;) &harr; &not;True(&lt;Q&gt;).</p>\r\n\
+  \r\n\n\
+  <p>But, in classical logic, (*) leads to the contradiction:</p>\r\n\
+  \r\n\n\
+  <p>(+) True(&lt;Q&gt;) &and; &not;True(&lt;Q&gt;).</p>\r\n\
+  \r\n\n\
+  <p>Most theories of truth try to solve the Liar Paradox by\r\n\
+  restricting TS in one way or another, but in <i>STFP</i> Hartry Field argues that this\r\n\
+  is a mistake. He describes as <i>logical dogmatism</i> the view that\r\n\
+  restricting semantic principles like TS should always be preferred to revising\r\n\
+  classical logic. The truth predicate is, according to him, &quot;a device of\r\n\
+  infinite conjunction or disjunction (or, more accurately, a device of\r\n\
+  quantification)&quot; (p. 210) and this means that it mainly plays a <i>logical</i>\r\n\
+  \r\n\
+  role, one that crucially depends on TS and on the &quot;transparency&quot; of\r\n\
+  the truth predicate, understood along the lines of the following\r\n\
+  Intersubstitutivity Principle:</p>\r\n\
+  \r\n\n\
+  <p>(<b>IP</b>) For every sentence\r\n\
+  A, the substitution in any non-opaque sentential context of any occurrence of a\r\n\
+  sentence B by True (&lt;B&gt;) (or vice versa) results in a sentence logically\r\n\
+  equivalent to A.</p>\r\n\
+  \r\n\n\
+  <p>If Field&rsquo;s deflationary view about truth is correct,\r\n\
+  restricting TS or IP need not be any less harmful for our ordinary\r\n\
+  understanding of meaning and logic than restricting other logical principles\r\n\
+  concerning terms such as &lsquo;or&rsquo;, &lsquo;and&rsquo;, &lsquo;not&rsquo;, etc., would be. A revision of the\r\n\
+  logic of truth is also a revision of logic. So, when assessing an alleged\r\n\
+  solution to the Liar Paradox, it is the whole logic plus truth theory that\r\n\
+  should be evaluated.</p>\r\n\
+  \r\n\n\
+  <p>A problem for most theories of truth is that they are\r\n\
+  unable to express consistently their own solution to the Liar. When they try to\r\n\
+  do so, they fall prey to strengthened versions of the paradox. For instance,\r\n\
+  theories that declare that Q is neither true nor false are forbidden from\r\n\
+  saying so in the language of the theories, since that assertion would imply\r\n\
+  that Q is not true, reinstating the paradox again. Field tries to overcome\r\n\
+  these expressive limitations by introducing a predicate of determinateness, D,\r\n\
+  into the language. Pathological sentences are then classified as being neither\r\n\
+  determinately true nor determinately false. The challenge is to show that the\r\n\
+  semantics of D fully characterizes all pathological sentences without creating\r\n\
+  new paradoxes.</p>\r\n\
+  \r\n\n\
+  <p>Field&rsquo;s goal in <i>STFP</i> is to offer a theory\r\n\
+  of truth for a language <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> which contains its own truth\r\n\
+  predicate that meets the following conditions:</p>\r\n\
+  \r\n\
+  <ol>\r\n  <li>It preserves IP in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>.</li>\r\n  <li>It respects TS.</li>\r\n  <li>It is free of semantic\r\n  paradoxes: not only paradoxes concerning the truth predicate (the Liar, Curry),\r\n  but also paradoxes about the predicate &lsquo;true of&rsquo; (Grelling) and paradoxes of\r\n  definability (Berry and K&ouml;nig).</li>\r\n  <li>It contains a predicate of\r\n  determinateness, D, in order to characterize problematic sentences;</li>\r\n  <li>And it does this while\r\n  avoiding the &quot;revenge problem&quot; (strengthened versions of the\r\n  paradoxes).</li>\r\n  <li>In fulfilling 1-5, it alters classical logic as little as possible, so as not to cripple ordinary reasoning.</li>\r\n\
+  </ol>\r\n\
+  \r\n\n\
+  <p>Together with these major goals, Field also pursues a\r\n\
+  secondary (but relevant and ambitious) goal in <i>STFP</i>: to give an account\r\n\
+  of truth that deals with the Sorites Paradox, while respecting the intuition\r\n\
+  that vague predicates do not have sharp boundaries. The D predicate can be used\r\n\
+  to characterize sentences that fail to be determinately true due to the\r\n\
+  presence of vague predicates. Field&rsquo;s aim is to show that iteration of the D\r\n\
+  predicate does not generate sharp boundaries at any point.</p>\r\n\
+  \r\n\n\
+  <p><i>STFP</i> is structured in five parts. The first contains selective background on relevant\r\n\
+  issues related to the Liar Paradox and the concept of truth. In the first two\r\n\
+  chapters, Field reviews the ways in which a language can express\r\n\
+  self-referential sentences and the consequences that Tarski&rsquo;s theorem has for\r\n\
+  the project of defining truth. Tarski&rsquo;s theorem affects the common definition of\r\n\
+  validity in terms of (logically) necessary preservation of truth and opens a\r\n\
+  gap between truth definitions for restricted and unrestricted languages. A\r\n\
+  related topic is also introduced in chapter 2: an ideal for a theory of truth\r\n\
+  would be for all of its axioms to be true and all of its rules to be truth\r\n\
+  preserving. But if this ideal were met, we could prove by induction the\r\n\
+  soundness of the theory and conclude its consistency from its soundness,\r\n\
+  contradicting G&ouml;del&rsquo;s second incompleteness theorem. So every theory (and that,\r\n\
+  of course, includes Field&rsquo;s own solution) has to fall short of this ideal. In\r\n\
+  the rest of the book, when Field analyses several different theories of truth,\r\n\
+  he always carefully determines where the intuitive argument for soundness breaks\r\n\
+  down; thereby, in a sense, measuring the degree of self-reflection of the\r\n\
+  theories. In chapter 3, Field presents Kripke&rsquo;s theory of truth as based on\r\n\
+  Kleene&rsquo;s strong logic. Although this theory\r\n\
+  preserves IP, Kleene&rsquo;s conditional is so weak that even the law A &rarr; A is\r\n\
+  invalid and therefore TS does not hold unrestrictedly. Furthermore, the theory\r\n\
+  has well-known expressive limitations and cannot characterize paradoxical\r\n\
+  sentences. These limitations are partly overcome by adopting Luckasiewicz&rsquo;s infinite-valued propositional logic (ch. 4). In such a\r\n\
+  semantic framework we can keep IP and TS and define a &lsquo;determinateness&rsquo; operator D that can be used to\r\n\
+  characterize paradoxical sentences. Unfortunately, this theory has to be kept\r\n\
+  at the propositional level, since Field shows that adding quantifiers would\r\n\
+  create new paradoxes (formulated in terms of transfinite iterations of the D operator). Part I of <i>STFP</i> also\r\n\
+  includes an interlude on vagueness and the paradoxes of definability (ch. 5).</p>\r\n\
+  \r\n\n\
+  <p>The second part of the book offers a wide critical survey\r\n\
+  of most of the best-known approaches to the Liar Paradox that restrict IP and\r\n\
+  TS, but try to minimize the cost of doing so. Field describes these theories --\r\n\
+  a bit misleadingly perhaps -- as &quot;broadly classical&quot;, meaning that\r\n\
+  before the dilemma: &quot;Should we restrict TS or some classical principle?&quot; they always embraced the first option. Here, he discusses gap and glut theories\r\n\
+  (chs. 7-8), supervaluationist and revision rule theories (chs. 10-12), as well\r\n\
+  as stratified and contextual truth theories (ch. 14). For him, the main problem\r\n\
+  with all these theories is their failure to preserve IP and the damage this\r\n\
+  causes to the logical function of the truth predicate (ch. 13). A second\r\n\
+  problem with these theories is that they fail to self-reflect in damaging ways:\r\n\
+  they declare some of their own axioms untrue or declare some of their own rules\r\n\
+  not to be unrestrictedly truth-preserving.</p>\r\n\
+  \r\n\n\
+  <p>In the third and fourth parts of <i>STFP</i> (chs. 15-23) Field develops his paracomplete theory of truth.\r\n\
+  Then in the fifth and last part of the book (chs. 24-27) he discusses versions\r\n\
+  of Priest&rsquo;s paraconsistent dialetheism. These two theories solve paradoxes by\r\n\
+  restricting classical logic: paracomplete solutions stop the inference from (*)\r\n\
+  to (+); dialetheists accept (+), but restrict the explosion rule so that (+)\r\n\
+  does not imply everything.</p>\r\n\
+  \r\n\n\
+  <p>We trust that this sketch of <i>STFP</i> will convince the reader of the hopeless task of giving a\r\n\
+  detailed discussion of the content of the book in the pages of this review. In\r\n\
+  what follows, we will outline Field&rsquo;s paracomplete solution to the paradoxes\r\n\
+  and discuss some aspects of it.</p>\r\n\
+  \r\n\
+  <p style=\"text-align:center;\">II</p>\r\n\
+  \r\n\n\
+  <p>The technical development of Field&rsquo;s solution starts from\r\n\
+  a ground first-order language <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> that lacks a truth predicate and\r\n\
+  contains the usual logical constants plus Field&rsquo;s conditional: &lsquo;&rarr;&rsquo;\r\n\
+  (ch. 16). He considers the non-logical symbols of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> interpreted in a\r\n\
+  classical model M. Next, he expands <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /> into a language, <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>,\r\n\
+  which contains a truth predicate &lsquo;T&rsquo;. The sentences of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>\r\n\
+  will initially be interpreted according to Kleene&rsquo;s strong logic in a semantic\r\n\
+  framework with three truth-values: {0, &frac12;, 1}. The most relevant feature\r\n\
+  of Field&rsquo;s semantics is the way conditionals are evaluated. Field combines\r\n\
+  ideas coming from different truth theories to create the semantics of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+\r\n\
+  </sup>He uses Kripkean fixed points to define the interpretation of the truth\r\n\
+  predicate and revision rules to define the interpretation of the conditional\r\n\
+  operator. The interpretations are constructed in a transfinite series of\r\n\
+  stages. In the process, all formulas which are conditionals are considered as\r\n\
+  (generalized) atomic formulas. Initially, we have a valuation, v<sub>0</sub>,\r\n\
+  that assigns to all conditionals the value &frac12;.<a href=\"#_edn1\" name=\"_ednref1\" title=\"\"><sup>[1]</sup></a>\r\n\
+  Using M, v<sub>0 </sub>is extended to all atomic formulas. By applying Kripke&rsquo;s\r\n\
+  Kleene-based minimal fixed point construction, Field reaches a valuation, X<sub>0</sub>,\r\n\
+  for the truth predicate that respects IP. But conditionals do not get a\r\n\
+  compositional semantics at the valuation determined by X<sub>0</sub> since all\r\n\
+  of them have value &frac12; independently of the values of their antecedents\r\n\
+  and consequents. Revision rules are introduced at this point to deal with this\r\n\
+  problem. A new valuation for conditionals, v<sub>1</sub>, is defined according\r\n\
+  to the following rule: v<sub>1</sub> assigns 0 to a conditional when the value\r\n\
+  of its antecedent (with respect to X<sub>0</sub>) is greater than the value of\r\n\
+  its consequent (with respect to X<sub>0</sub>), and assigns 1 otherwise. Thus,\r\n\
+  v<sub>1</sub> enables us to construct another Kripkean fixed point, X<sub>1</sub>,\r\n\
+  which provides a new interpretation to the truth predicate, one, moreover, that\r\n\
+  affords a more adequate evaluation for the conditionals. This construction can\r\n\
+  be transfinitely iterated using this rule of revision (|A|<sub>&alpha;</sub> represents the value of sentence A at stage &alpha;):\r\n\
+  <a href=\"#_edn2\" name=\"_ednref2\" title=\"\"><sup>[2]</sup></a></p>\r\n\
+  \r\n\n\
+  <p>|A &rarr; B|<sub>&alpha;</sub> =\r\n\
+  1 if (&exist;&beta; &lt; &alpha;) (&forall;&gamma;) [&gamma; &le; &beta; &lt; &alpha; &rarr; |A|<sub>&gamma;</sub> &le; |B|<sub>&gamma;</sub>]</p>\r\n\
+  \r\n\
+  <p style=\"margin-left:51px\">= 0 if (&exist;&beta; &lt; &alpha;) (&forall;&gamma;) [&gamma; &le; &beta; &lt; &alpha; &rarr; |A|<sub>&gamma;</sub> &gt; |B|<sub>&gamma;</sub>]</p>\r\n\
+  \r\n\
+  <p style=\"margin-left:51px\">= &frac12; otherwise.</p>\r\n\
+  \r\n\n\
+  <p>Under the revision process, each sentence A behaves in\r\n\
+  one of the following three ways. Either there is an ordinal, &alpha;,\r\n\
+  such that |A|<sub>&alpha;</sub> = 1 at all ordinals &beta; &ge; &alpha;, or there is an ordinal, &alpha;, such that at |A|<sub>&alpha;</sub> = 0 at all &beta; &ge; &alpha;,\r\n\
+  or neither of these two situations obtains. In the first two cases, we say that\r\n\
+  A&rsquo;s ultimate value is 1 or 0 respectively; in the third case, A&rsquo;s ultimate\r\n\
+  value is &frac12;. The third case covers very different situations (A\r\n\
+  eventually gets constant value &frac12; after some ordinal &alpha;, or\r\n\
+  A&rsquo;s truth-value oscillates between two or more truth-values throughout the\r\n\
+  revision procedure following different patterns). The ultimate values of the formulas\r\n\
+  of <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> provide a three-valued semantics for <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>\r\n\
+  that satisfies IP and TS and has a conditional that respects many classical\r\n\
+  rules and principles (sect. 17.4).</p>\r\n\
+  \r\n\n\
+  <p>Field analyses several aspects of this construction in\r\n\
+  detail. For instance, he shows in sect. 16.2 that there are ordinals, &alpha;,\r\n\
+  such that the value of each sentence at stage &alpha; in the process coincides\r\n\
+  with its ultimate value (<i>acceptable\r\n\
+  ordinals</i>). Given that the Kleene rules for connectives hold throughout the\r\n\
+  revision process, this ensures that the ultimate values of formulas other than\r\n\
+  conditionals respect Kleene&rsquo;s compositional semantics. Moreover, in sect. 17.1\r\n\
+  Field offers an algebraic semantics on an infinite set of truth-values that\r\n\
+  makes the different patterns of revision of the sentences explicit and that\r\n\
+  gives a compositional semantics to the conditional.<a href=\"#_edn3\" name=\"_ednref3\" title=\"\"><sup>[3]</sup></a></p>\r\n\
+  \r\n\n\
+  <p>This semantics offers a paracomplete theory of truth,\r\n\
+  i.e., one in which the Law of Excluded Middle (LEM) is invalid. According to\r\n\
+  Field, it is indeterminate whether some sentences containing vague predicates\r\n\
+  are true: this already shows that LEM is contentious. Moreover, by rejecting\r\n\
+  LEM, a natural proof of (+) from (*) is blocked. Unfortunately, this sacrifice\r\n\
+  is not enough. We need to restrict other classically valid rules of inference\r\n\
+  and principles in order to block the Liar Paradox and other semantic paradoxes\r\n\
+  (such as Curry&rsquo;s Paradox). The rules of <i>Reductio ad Absurdum</i> (RA) and <i>Conditional\r\n\
+  Proof</i> (CP) are the most significant losses. But laws governing conditionals\r\n\
+  such as <i>importation</i>, <i>exportation</i> or <i>contraction</i> are not\r\n\
+  generally valid either. Furthermore, many classical patterns of reasoning are\r\n\
+  validated only in the rule form, not in the law form. For instance, modus\r\n\
+  ponens is valid (A, A &rarr; B |= B), but |&ne; (A &and; (A &rarr; B)) &rarr; B. Field justifies this asymmetry by appealing to the\r\n\
+  difference between conditional assertion and assertion of a conditional: the\r\n\
+  latter has more stringent conditions than the former (sects. 17.4, 10.6-7). He\r\n\
+  also points out that these losses are not very damaging since, in the case\r\n\
+  where all the premises satisfy LEM, classical logic can be safely applied. In\r\n\
+  contradistinction to the bad self-reflection properties of other theories, the\r\n\
+  paracomplete theory declares all its axioms true and all its truth rules truth-preserving,\r\n\
+  even though it refrains from declaring some of its other logic rules\r\n\
+  truth-preserving.</p>\r\n\
+  \r\n\n\
+  <p>With this logic, Field claims to have fulfilled goals 1,\r\n\
+  2 and 3 mentioned above. With respect to goal 4, Field uses his conditional to\r\n\
+  define a determinateness operator, D, that can be used to describe defective\r\n\
+  sentences without, at least apparently, falling prey to new paradoxes (as\r\n\
+  expressed in goal 5). The operator D satisfies that: |= DA &rarr; A\r\n\
+  and that DA is, in general, stronger than A. When A is a pathological sentence,\r\n\
+  &not;DA\r\n\
+  &and;\r\n\
+  &not;D&not;A\r\n\
+  will be a true sentence expressing that A is defective.<a href=\"#_edn4\" name=\"_ednref4\" title=\"\"><sup>[4]</sup></a> Other\r\n\
+  properties of the determinateness operator can be found in sect. 15.2. Field\r\n\
+  shows there that in his semantics, if we define DA as A &and; &not;(A &rarr; &not;A), the operator D satisfies\r\n\
+  the right properties. This shows that the operator is definable in the\r\n\
+  language; hence no worries about the consistency of the new operator arise.</p>\r\n\
+  \r\n\n\
+  <p>Using the new operator and G&ouml;del&rsquo;s diagonal theorem we\r\n\
+  can form a new liar-like sentence, Q<sub>1</sub>, which is logically equivalent\r\n\
+  to &not;DQ<sub>1</sub>.\r\n\
+  A correct classification of this sentence cannot be given by &not;DQ<sub>1</sub>,\r\n\
+  on pain of contradiction, but in Field&rsquo;s semantics we can prove that &not;DDQ<sub>1</sub>.\r\n\
+  Again this invites the creation of a new liar-like sentence, Q<sub>2</sub>,\r\n\
+  which is logically equivalent to &not;DDQ<sub>2</sub>. In general, there are sentences Q<sub>&alpha;</sub> such that Q<sub>&alpha;</sub>\r\n\
+  is logically equivalent to &not;D<sup>&alpha;</sup>Q<sub>&alpha;</sub> when &alpha; is a finite ordinal and 'D<sup>&alpha;</sup>' stands for &alpha;\r\n\
+  concatenations of the D operator. But the construction can be extended to the limit case, &omega;,\r\n\
+  with the definition of D<sup>&omega;</sup>A as '&forall;&alpha;&lt;&omega; True(&lt;D<sup>&alpha;</sup>A&gt;)'. The\r\n\
+  question then arises of how far this construction can be extended into the\r\n\
+  transfinite ordinals. Field shows that the construction works well for ordinals\r\n\
+  that are hereditarily definable in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> (i.e., that can be\r\n\
+  defined in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup> and such that all previous ordinals are also\r\n\
+  definable in <img src=\"/assets/17102/saving-truth-from-paradox-german-l-small.gif\" height=\"14\" border=\"0\" alt=\"L\" /><sup>+</sup>). The key point of the construction is that\r\n\
+  as long as D<sup>&alpha;</sup> can be hereditarily defined in the language, the corresponding sentence Q<sub>&alpha;</sub>\r\n\
+  will not produce a paradox (because the instance of LEM, D<sup>&alpha;</sup>Q<sub>&alpha;</sub>\r\n\
+  &or;\r\n\
+  &not;D<sup>&alpha;</sup>Q<sub>&alpha;</sub>,\r\n\
+  will be inadmissible) and Q<sub>&alpha;</sub> will be correctly classified as &not;D<sup>&alpha;+1</sup>Q<sub>&alpha;</sub>.\r\n\
+  The Strengthened Liar for this Liar hierarchy of sentences, intuitively, would\r\n\
+  be a sentence, Q<sub>&infin;</sub>, equivalent to &not;D<sup>&infin;</sup>Q<sub>&infin;</sub>,\r\n\
+  where D<sup>&infin;</sup>A\r\n\
+  expresses the fact that A is D<sup>&alpha;</sup>A, for all D<sup>&alpha;</sup> in the Liar\r\n\
+  Hierarchy. But if D<sup>&infin;</sup>A quantifies over all well-behaved iterations of\r\n\
+  the D operator, it will itself be badly behaved and will not produce a new\r\n\
+  paradox. This can be made precise in different ways and Field argues that none\r\n\
+  of them produces a new paradox (ch. 22). For him, this supports the idea that\r\n\
+  his language has no need to be expanded and is sufficiently powerful to serve\r\n\
+  as its own metalanguage.</p>\r\n\
+  \r\n\
+  <p style=\"text-align:center;\">III</p>\r\n\
+  \r\n\n\
+  <p>A natural question to ask at this point is: Why should we\r\n\
+  adopt Field&rsquo;s Logic? Any discussion about logical matters has a normative\r\n\
+  dimension. After describing a logical system, it always makes sense to ask\r\n\
+  whether <i>we</i> <i>should reason according\r\n\
+  to it</i>. But this question cannot be answered unless we bear in mind some\r\n\
+  standards of &quot;correction&quot; defined in terms of principles that should\r\n\
+  be preserved, problems that should be solved, etc. The six desiderata listed\r\n\
+  above provide a rough outline of the normative background used by Field in\r\n\
+  order to compare different logics and single out the best ones. Obviously, if\r\n\
+  two theories share the same goals and normative standards, any comparison\r\n\
+  between them will proceed by assessing their respective success in achieving <i>those</i>\r\n\
+  goals. However, when two theories pursue different goals and pay attention to\r\n\
+  different normative standards, things become more complicated.</p>\r\n\
+  \r\n\n\
+  <p>Field has extensively argued elsewhere<a href=\"#_edn5\" name=\"_ednref5\" title=\"\"><sup>[5]</sup></a>\r\n\
+  that truth is merely a logical device of quantification. That is, partly, why\r\n\
+  the question he addresses in <i>STFP</i> is:\r\n\
+  <i>what is the best way to keep </i>IP<i> and </i>TS<i> unrestricted while avoiding semantic paradoxes and damaging ordinary\r\n\
+  reasoning as little as possible?</i> His deflationary views about truth\r\n\
+  therefore play a prominent role in the constraints he places on any acceptable\r\n\
+  logic: insofar as the logical function carried out by the truth predicate\r\n\
+  crucially depends on IP, preserving IP intact becomes a non-negotiable goal. Of\r\n\
+  course, for many defenders of substantial theories of truth, IP and TS are\r\n\
+  negotiable (and not necessarily because they are &quot;logical dogmatists&quot;).\r\n\
+  But even if we assume a deflationary view of truth, the previous question does\r\n\
+  not seem to cover all the demands we place on an acceptable solution to the\r\n\
+  Liar Paradox.</p>\r\n\
+  \r\n\n\
+  <p>As Charles Chihara once stressed, paradoxes raise issues\r\n\
+  of two kinds. Some of them concern what he calls <i>the preventative problem</i>: that of finding a solution to the\r\n\
+  paradox, whereas others concern <i>the diagnostic problem</i>: &quot;the\r\n\
+  problem of pinpointing that which is deceiving us and, if possible, to explain\r\n\
+  how and why the deception was produced&quot;.<a href=\"#_edn6\" name=\"_ednref6\" title=\"\"><sup>[6]</sup></a> Two\r\n\
+  relevant criteria for assessing the merits of a solution to a paradox are: (<i>i</i>) whether it offers a <i>correct</i> diagnosis of the problem posed\r\n\
+  by the paradox; and (<i>ii</i>) whether the\r\n\
+  solution is adequate given the diagnosis. Russell&rsquo;s principle of vicious\r\n\
+  circularity, Kripke&rsquo;s notion of groundedness, Gupta and Belnap&rsquo;s theory of\r\n\
+  circular concepts or Priest&rsquo;s appeal to dialetheias and the Inclosure Scheme\r\n\
+  are attempts to solve the diagnostic problem. Trying to solve this problem may\r\n\
+  also show that certain tools employed in the construction of a semantic\r\n\
+  framework are not philosophically irrelevant. For instance, Gupta claims that\r\n\
+  the use of revision rules is linked to our understanding of circular concepts\r\n\
+  and the fact that truth is a circular concept is part of his diagnosis of the\r\n\
+  problems underlying the Liar Paradox. If the diagnosis is correct, the use of a\r\n\
+  revision rule in giving the meaning of truth is forced upon us, explaining the\r\n\
+  failure of some truth principles (such as TS). A correct answer to the\r\n\
+  diagnostic problem requires us to explain why certain concepts, rules of\r\n\
+  inference or principles (and <i>not others</i>)\r\n\
+  are relevant for us to understand the formation of the paradox. Preserving\r\n\
+  consistency by just rejecting some concepts, rules or principles would block\r\n\
+  the paradox, but it would not explain why we felt compelled to accept its\r\n\
+  conclusion in the first place.</p>\r\n\
+  \r\n\n\
+  <p>Now, the <i>only</i>\r\n\
+  problem posed by paradoxes that Field seems to address in <i>STFP</i> is that certain logical rules and principles are jointly\r\n\
+  inconsistent with IP and TS. As long as we preserve these principles, any\r\n\
+  solution that rejects some rules of inference or principles while only\r\n\
+  minimally damaging ordinary reasoning would be an acceptable solution to the\r\n\
+  paradoxes.<a href=\"#_edn7\" name=\"_ednref7\" title=\"\"><sup>[7]</sup></a>\r\n\
+  Notice that different solutions to the paradoxes could meet this requirement\r\n\
+  and that they could do so without advancing a diagnosis of what is wrong with\r\n\
+  the paradoxes (or, in other words, of why certain solutions should be preferred\r\n\
+  to other, similar solutions).</p>\r\n\
+  \r\n\n\
+  <p>Unfortunately, many of the topics discussed in the book\r\n\
+  could not find a place in this review. Chief among them are: the application of\r\n\
+  Field&rsquo;s paracomplete theory to the solution of the Sorites Paradox; the\r\n\
+  detailed examination of several different theories of truth in the second part\r\n\
+  of the book; the comparison between the paracomplete and the dialetheist\r\n\
+  solutions to the paradoxes; and the philosophical discussion of the notions of\r\n\
+  agreement and indeterminacy. The book is a valuable source of inspiration on\r\n\
+  all those topics. It will certainly shape the discussion on semantic paradoxes\r\n\
+  in the years to come.</p>\r\n\
+  \r\n\
+  \r\n\
+  <hr align=\"left\" size=\"1\" width=\"33%\">\r\n\
+  \r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref1\" name=\"_edn1\"\r\n\
+  title=\"\"><sup>[1]</sup></a> It is\r\n\
+  possible to start with a different valuation as long as it is\r\n\
+  &quot;transparent&quot;, i.e., as long as it respects IP in the context of <i>conditional</i> sentences.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref2\" name=\"_edn2\"\r\n\
+  title=\"\"><sup>[2]</sup></a> In the\r\n\
+  book, the construction is carried out for arbitrary formulas. In order to\r\n\
+  simplify matters we will only consider sentences and skip reference to variable\r\n\
+  assignments.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref3\" name=\"_edn3\"\r\n\
+  title=\"\"><sup>[3]</sup></a> The\r\n\
+  values of the algebraic semantics are based on the revision process itself.\r\n\
+  Therefore, the algebraic semantics does not simplify the search for the\r\n\
+  ultimate value of a sentence, since the application of the algebraic semantics\r\n\
+  requires the previous construction of the revision process.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref4\" name=\"_edn4\"\r\n\
+  title=\"\"><sup>[4]</sup></a> Since\r\n\
+  the semantics satisfies IP, defectiveness cannot be expressed by &not; T&lt;A&gt; &amp; &not; T&lt;&not;A&gt;, this being equivalent to the\r\n\
+  contradiction &not; A &amp; &not; &not; A.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref5\" name=\"_edn5\"\r\n\
+  title=\"\"><sup>[5]</sup></a> See <i>Truth and the Absence of Fact</i>, Oxford\r\n\
+  University Press, 2001.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref6\" name=\"_edn6\"\r\n\
+  title=\"\"><sup>[6]</sup></a> &quot;The Semantic Paradoxes: A Diagnostic Investigation&quot;, <i>Philosophical\r\n\
+  Review</i> 88: 590-618, 1979, p. 590.</p>\r\n\
+  \r\n\n\
+  <p><a href=\"#_ednref7\" name=\"_edn7\"\r\n\
+  title=\"\"><sup>[7]</sup></a> In general, Field does not seem to ascribe any particular philosophical relevance\r\n\
+  to the choosing of one semantics or another in order to create the theory of\r\n\
+  truth. For instance, Field would not object to someone's giving a semantics for\r\n\
+  the conditional by means of fixed points or by means of technical tools other\r\n\
+  than revision rules, as long as they could create a logic that satisfies as\r\n\
+  many intuitively acceptable rules as Field's semantics does.</p>"
+review_title: Saving Truth from Paradox
