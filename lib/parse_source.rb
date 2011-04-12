@@ -2,6 +2,7 @@
 require 'hpricot'
 require 'yaml'
 require 'logger'
+require 'fileutils'
 log     = Logger.new(File.join(File.dirname(__FILE__), '../tmp/parse_source.log'), 5, 10*1024)
 
 @exceptions = []
@@ -90,6 +91,7 @@ Dir.glob(File.join(File.dirname(__FILE__), '../storage/original/*.html')).each d
         # review_content = (content/"div#hr").first.following_siblings.collect{|sib| sib.to_original_html}.join("\n")
         dictionary['content']      = original_html.strip
       end
+      FileUtils.mkdir_p(File.join(File.dirname(__FILE__), "../storage/serializations/reviews")) unless File.exist?(File.join(File.dirname(__FILE__), "../storage/serializations/reviews"))
       File.open(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/review-#{review_id}.yml"), 'w+') do |file|
         file.puts YAML.dump(dictionary)
       end

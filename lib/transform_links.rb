@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml'
 require 'open-uri'
+require 'fileutils'
 
 
 link_filename = File.join(File.dirname(__FILE__), "../storage/serializations/source-links.yml")
@@ -12,6 +13,8 @@ image_filename = File.join(File.dirname(__FILE__), "../storage/serializations/so
 @images_counter = 0
 
 # Copy all existing images locally for upload and transformation
+
+FileUtils.mkdir_p(File.join(File.dirname(__FILE__), "../storage/images")) unless File.exist?(File.join(File.dirname(__FILE__), "../storage/images"))
 
 @images = @source_images.inject({}) do |mem, from|
   source = (from =~ /^\// ? File.join('http://ndpr.nd.edu', from) : from)
