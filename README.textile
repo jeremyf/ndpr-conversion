@@ -1,8 +1,8 @@
 Order of Execution
 
-# lib/crawl.rb
-# lib/parse_source.rb
-# lib/render.rb
-# lib/transform_links.rb
-# lib/upload_assets.rb
-# lib/update_content_images.rb
+# bundle exec ruby lib/crawl.rb
+# bundle exec ruby lib/parse_source.rb
+# bundle exec ruby lib/render.rb
+# bundle exec ruby lib/transform_links.rb
+# bundle exec ruby lib/upload_assets.rb
+# bundle exec ruby lib/update_content_images.rb

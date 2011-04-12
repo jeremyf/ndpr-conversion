@@ -39,6 +39,7 @@ File.open(output_image_filename, 'w+') do |file|
   file.puts YAML.dump(@images)
 end
 
+# Process all source links
 @links = @source_links.inject({}) do |mem, from|
   pairing = {:source => from}
   case from
@@ -63,7 +64,7 @@ end
   mem
 end
 
-output_image_filename = File.join(File.dirname(__FILE__), "../storage/serializations/transformed-links.yml")
-File.open(output_image_filename, 'w+') do |file|
+output_links_filename = File.join(File.dirname(__FILE__), "../storage/serializations/transformed-links.yml")
+File.open(output_links_filename, 'w+') do |file|
   file.puts YAML.dump(@links)
 end
