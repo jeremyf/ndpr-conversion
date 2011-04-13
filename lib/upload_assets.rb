@@ -16,8 +16,8 @@ def password
 end
 net_id
 password
-@host = 'localhost:3000'
-@protocol = 'http'
+@host = 'ndpr.conductor.nd.edu'
+@protocol = 'https'
 
 def verify_upload!(source, target)
   if RestClient.get("#{@protocol}://conductor:preview@#{File.join(@host, target)}")

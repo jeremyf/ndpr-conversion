@@ -13,22 +13,26 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/*.
   end
   regexp_for_split = /./
   target = buffer.split(regexp_for_split).join("\n")
-  source = File.read(source_filename).split(regexp_for_split).join("\n")
+  if File.exist?(source_filename)
+    source = File.read(source_filename).split(regexp_for_split).join("\n")
 
-  begin
-    tmp_target_filename = File.join(File.dirname(__FILE__), "../tmp/target-#{object['review_id']}.html")
-    tmp_source_filename = File.join(File.dirname(__FILE__), "../tmp/source-#{object['review_id']}.html")
-    File.open(tmp_source_filename, 'w+') { |file| file.puts source }
+    begin
+      tmp_target_filename = File.join(File.dirname(__FILE__), "../tmp/target-#{object['review_id']}.html")
+      tmp_source_filename = File.join(File.dirname(__FILE__), "../tmp/source-#{object['review_id']}.html")
+      File.open(tmp_source_filename, 'w+') { |file| file.puts source }
 
-    File.open(tmp_target_filename, 'w+') { |file| file.puts target }
+      File.open(tmp_target_filename, 'w+') { |file| file.puts target }
 
-    diff = `diff #{tmp_source_filename} #{tmp_target_filename} -EwBb`.strip
-    if diff.any?
-      require 'ruby-debug'; debugger; true;
-      puts "Review differences for Review #{object['review_id']}:\n\n#{diff}\n\n#{diff.inspect}"
+      diff = `diff #{tmp_source_filename} #{tmp_target_filename} -EwBb`.strip
+      if diff.any?
+        require 'ruby-debug'; debugger; true;
+        puts "Review differences for Review #{object['review_id']}:\n\n#{diff}\n\n#{diff.inspect}"
+      end
+    ensure
+      File.unlink(tmp_target_filename) if File.exist?(tmp_target_filename)
+      File.unlink(tmp_source_filename) if File.exist?(tmp_source_filename)
     end
-  ensure
-    File.unlink(tmp_target_filename) if File.exist?(tmp_target_filename)
-    File.unlink(tmp_source_filename) if File.exist?(tmp_source_filename)
+  else
+    puts "Skipping #{source_filename}"
   end
 end

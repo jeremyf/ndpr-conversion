@@ -15,8 +15,8 @@ def password
 end
 net_id
 password
-@host = 'localhost:3000'
-@protocol = 'http'
+@host = 'ndpr.conductor.nd.edu'
+@protocol = 'https'
 
 def parse_time(year, month, dayish)
   begin
@@ -42,7 +42,7 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
       params = {}
       params['publish'] = '1'
       params['news'] = {}
-      params['news']['content'] = attributes['content'].strip
+      params['news']['content'] = (attributes['transformed_content'] || attributes['content']).strip
       params['news']['author_id'] = 'other'
       params['news']['title'] = attributes['review_title'].strip
       params['news']['metum_attributes'] = { 'keys' => [], 'data' => []}
