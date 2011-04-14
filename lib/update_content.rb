@@ -29,6 +29,8 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
     end
   end
 
+  file_info['transformed_content'].gsub!(/\. ?\. ?\./, '&hellip;')
+
   if file_info['transformed_content']
     File.open(filename, 'w+') do |file|
       file.puts YAML.dump(file_info)
