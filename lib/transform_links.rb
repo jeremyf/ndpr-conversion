@@ -55,13 +55,21 @@ end
   when /\#(.*)\Z/
     pairing[:target] = "##{$1}"
   when /\A(\.\.)?\//
-    pairing[:target] = "**VERIFY**"
+    puts from
+    require 'ruby-debug'; debugger; true;
+    pairing[:target] = from
   when /\Ahttps?:\/\/(cfweb-prod|ndpr)\.nd\.edu/
-    pairing[:target] = "**VERIFY**"
+    puts from
+    require 'ruby-debug'; debugger; true;
+    pairing[:target] = from
   when /\Ahttps?:\/\/ndpr\.icaap\.org/
-    pairing[:target] = "**VERIFY**"
+    puts from
+    require 'ruby-debug'; debugger; true;
+    pairing[:target] = from
   else
-    pairing[:target] = "**VERIFY**"
+    puts from
+    require 'ruby-debug'; debugger; true;
+    pairing[:target] = from
   end
   mem[from] = pairing
   mem
