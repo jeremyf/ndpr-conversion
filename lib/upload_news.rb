@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'yaml'
 require 'active_support/core_ext/hash'
+require 'active_support/time'
 require 'rest_client'
 require 'highline'
 
@@ -20,14 +21,11 @@ password
 
 def parse_time(year, month, dayish)
   begin
-    published_at = Time.local(year, month, dayish)
-  rescue ArgumentError => e
-      dayish -= 1
-    if dayish > 0
-      retry
-    else
-      raise e
+    if new_time = Time.local(year.to_i, month.to_i, dayish.to_i, 0, 0, dayish.to_i)
+      return new_time
     end
+  rescue ArgumentError => e
+    return Time.local(year.to_i, month.to_i, 1).end_of_month.beginning_of_day + dayish.to_i
   end
 end
 
@@ -36,7 +34,9 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
     attributes = YAML.load_file(filename).stringify_keys
     if attributes['conductor_path'].nil?
       catalog_id = attributes['catalog_id'].to_s.strip
+      edition_number = nil
       if catalog_id =~ /\A(\d\d\d\d)\.(\d\d)\.(\d\d)\Z/
+        edition_number = $3
         published_at = parse_time($1.to_i,$2.to_i,$3.to_i)
       end
       params = {}
@@ -49,7 +49,7 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
       params['news']['published_at'] = published_at
       params['news']['custom_author_name'] = attributes['authors']
       params['news']['metum_attributes']['keys'] << 'edition'
-      params['news']['metum_attributes']['data'] << catalog_id
+      params['news']['metum_attributes']['data'] << edition_number
       params['news']['metum_attributes']['keys'] << 'reviewers'
       params['news']['metum_attributes']['data'] << attributes['reviewer']
       params['news']['metum_attributes']['keys'] << 'bibliography'
