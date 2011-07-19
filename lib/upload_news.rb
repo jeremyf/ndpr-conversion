@@ -21,11 +21,15 @@ password
 
 def parse_time(year, month, dayish)
   begin
-    if new_time = Time.local(year.to_i, month.to_i, dayish.to_i, 0, 0, dayish.to_i)
-      return new_time
+    if new_time = Time.local(year.to_i, month.to_i, dayish.to_i, 2, 0, dayish.to_i)
+      if new_time.month != month.to_i
+        2.hours.from_now(Time.local(year.to_i, month.to_i, 1).end_of_month.beginning_of_day + dayish.to_i)
+      else
+        return new_time
+      end
     end
   rescue ArgumentError => e
-    return Time.local(year.to_i, month.to_i, 1).end_of_month.beginning_of_day + dayish.to_i
+    return 2.hours.from_now(Time.local(year.to_i, month.to_i, 1).end_of_month.beginning_of_day + dayish.to_i)
   end
 end
 
