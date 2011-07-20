@@ -2,9 +2,11 @@ Order of Execution
 
 # bundle exec ruby lib/crawl.rb
 # bundle exec ruby lib/parse_source.rb
+# bundle exec ruby lib/check_for_english_content.rb
 # bundle exec ruby lib/render.rb
 # bundle exec ruby lib/transform_links.rb
 # bundle exec ruby lib/upload_assets.rb
 # bundle exec ruby lib/update_content.rb
 # bundle exec ruby lib/upload_news.rb
 # bundle exec ruby lib/generate_redirects.rb
+# bundle exec ruby lib/verify-edition.rb

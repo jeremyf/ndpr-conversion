@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'open-uri'
+require 'fileutils'
+
+FileUtils.mkdir_p(File.join(File.dirname(__FILE__), "../storage/original"))
 
 # Read through the review ides and write the file.
 review_ids_filename = File.join(File.dirname(__FILE__), 'review_ids.txt')
