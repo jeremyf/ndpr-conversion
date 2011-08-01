@@ -56,19 +56,15 @@ end
     pairing[:target] = "##{$1}"
   when /\A(\.\.)?\//
     puts from
-    require 'ruby-debug'; debugger; true;
     pairing[:target] = from
   when /\Ahttps?:\/\/(cfweb-prod|ndpr)\.nd\.edu/
     puts from
-    require 'ruby-debug'; debugger; true;
     pairing[:target] = from
   when /\Ahttps?:\/\/ndpr\.icaap\.org/
     puts from
-    require 'ruby-debug'; debugger; true;
     pairing[:target] = from
   else
     puts from
-    require 'ruby-debug'; debugger; true;
     pairing[:target] = from
   end
   mem[from] = pairing

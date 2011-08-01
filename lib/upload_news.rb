@@ -44,6 +44,7 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
         published_at = parse_time($1.to_i,$2.to_i,$3.to_i)
       end
       params = {}
+      params['without_expire'] = '1'
       params['publish'] = '1'
       params['news'] = {}
       params['news']['content'] = (attributes['transformed_content'] || attributes['content']).strip
