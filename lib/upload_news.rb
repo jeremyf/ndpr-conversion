@@ -35,11 +35,12 @@ end
 
 Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**/*.yml")).each do |filename|
   begin
+    @retry = true
     attributes = YAML.load_file(filename).stringify_keys
     if attributes['conductor_path'].nil?
       catalog_id = attributes['catalog_id'].to_s.strip
       edition_number = nil
-      if catalog_id =~ /\A(\d\d\d\d)\.(\d\d)\.(\d\d)\Z/
+      if catalog_id =~ /\A(\d\d\d\d)\.(\d\d)\.(\d\d\w?)\Z/
         edition_number = $3
         published_at = parse_time($1.to_i,$2.to_i,$3.to_i)
       end
@@ -74,7 +75,12 @@ Dir.glob(File.join(File.dirname(__FILE__), "../storage/serializations/reviews/**
       end
     end
   rescue Exception => e
-    require 'ruby-debug'; debugger; true;
-    break
+    if @retry == true
+      sleep(5)
+      @retry = false
+      retry
+    else
+      require 'ruby-debug'; debugger; true;
+    end
   end
 end
